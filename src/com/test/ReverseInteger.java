@@ -17,7 +17,22 @@ public class ReverseInteger {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(reverse(445567546));
+//		System.out.println(reverse(445567546));
+		ReverseInteger ri = new ReverseInteger();
+		ri.reverseInt(12345);
+	}
+	
+	
+	public void reverseInt(int number) {
+		int temp = -1;
+		int reverse = 0;
+		while(number != 0) {
+			temp = number % 10;
+			reverse = reverse * 10 + temp;
+			number = number / 10;
+			temp = -1;
+		}
+		System.out.println(reverse);
 	}
 
 }
