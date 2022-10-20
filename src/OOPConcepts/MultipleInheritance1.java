@@ -1,24 +1,28 @@
-package com.test;
+package OOPConcepts;
 
 
-class A{
+class CA{
 	public String getRessult(char a, char b) {
 		return ("A");
 	}
 }
 
-class B extends A{
+class CB implements Interface{
 	public String getRessult(char a, char b) {
-		//super.super.getRessult(a, b);
 		return ("B");
+	}
+
+	@Override
+	public String getResult(char a, char b) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
 
-public 
-class Inheritance1 {
 
-	public 
-	static void main(String[] args) {
+public class MultipleInheritance1 {
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		B b = new B();
 		System.out.println("Output1 : "+b.getRessult('a', 'a'));
